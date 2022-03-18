@@ -1,0 +1,27 @@
+body {
+    max-width: 760px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+}
+
+.result {
+
+    border: 2px solid rgb(207, 207, 207);
+    min-height: 100px;
+    padding: 10px;
+    border-radius: 5px;
+
+}
+
+.lable {
+    margin-top: 50px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.btn {
+    margin-bottom: 20px;
+}
