@@ -8,6 +8,9 @@ document.addEventListener("DOMContentLoaded", function (event) {
     if (img != null) {
         document.getElementById(`img`).src = img;
     };
+    let result = localStorage.getItem('result');
+    document.getElementById(`result`).textContent = result;
+
 });
 
 function checkSpam() {
@@ -19,7 +22,10 @@ function checkSpam() {
         localStorage.setItem('name', autor);
     };
 
-    document.getElementById('result').innerHTML += `<span class = "">${autor}: </span><span>${comment1}</span ><br/>`;
+    document.getElementById('result').innerHTML += `<br /><span class = "">${autor}: </span><span>${comment1}</span ><br/>`;
+
+    localStorage.setItem('result', (document.getElementById('result').textContent));
+
 
 }
 
